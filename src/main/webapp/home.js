@@ -1,3 +1,4 @@
+
 function getServerData(url, success){
     $.ajax({
         dataType: "json",
@@ -6,7 +7,13 @@ function getServerData(url, success){
 }
 
 function callDone(result){
-	$("#result").text(JSON.stringify(result));
+	var templateExample = _.template($('#templateExample').html());
+
+	var html = templateExample({
+		"attribute":JSON.stringify(result)
+	});
+
+	$("#result").append(html);
 }
 
 $(function(){

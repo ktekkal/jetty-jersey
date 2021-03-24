@@ -6,6 +6,13 @@
 
 	<dependencies>
 
+		<!--  DAO -->
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>datanucleus</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- Jetty -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>

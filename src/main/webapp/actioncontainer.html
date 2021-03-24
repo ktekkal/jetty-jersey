@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script id="templateRow" type="text/template">
+        <tr><td><%= title %></td><td><%= username %></td><td><%= content %></td></tr>
+    </script>
+
+    <h1>It works !</h1>
+
+    <textarea id="inputAdd" rows="10" cols="80"></textarea>
+    <button id="buttonAdd">Add to database</button>
+
+    <hr />
+
+    <input id="inputGet"></input>
+    <button id="buttonGet">Get from database</button>
+    <table style="border: 1px solid black" id="result"></table>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="actioncontainer.js"></script>
+</body>
+
+</html>
